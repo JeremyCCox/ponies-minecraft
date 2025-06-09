@@ -1,0 +1,14 @@
+services:
+    mlpserver:
+        image: javabuild
+        build: .
+        ports:
+            - 25565:25565
+            - 24455:24455/udp
+        volumes: 
+            - ./minecraftserver:/minecraftserver
+        command: ["bash","run.sh"]
+        stdin_open: true
+        tty: true
+        restart: unless-stopped
+    

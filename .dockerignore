@@ -1,0 +1,6 @@
+Minecraftserver/*
+!Minecraftserver/server.jar
+!Minecraftserver/eula.txt
+!Minecraftserver/run.sh
+!Minecraftserver/world/*
+!Minecraftserver/server.properties
